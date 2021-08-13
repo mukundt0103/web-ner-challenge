@@ -19,6 +19,10 @@ pip3 install spacy
 ```
 4. Run `make start FRONTEND=vue-frontend BACKEND=flask-backend`.
 
+## Screenshots
+
+
+
 ## References
 
 - [spaCy](https://spacy.io/models/en)

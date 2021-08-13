@@ -1,6 +1,6 @@
 # Web-based named entity recognition
 
-This project is done using Vue.js as frontend and Flask as backend.
+This project is done using Vue.js as frontend and Flask as backend. In this project, Named Entity Recognition (NER) is done using spaCy and the user can select upto 4 different languages.
 
 ## Steps to run the project
 1. Clone the repository using `git clone `.
@@ -18,3 +18,9 @@ python3 -m spacy download es_core_news_sm
 pip3 install spacy
 ```
 4. Run `make start FRONTEND=vue-frontend BACKEND=flask-backend`.
+
+## References
+
+- [spaCy](https://spacy.io/models/en)
+- [NER with spaCy](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da)
+- [Vue.js Crash Course](https://www.youtube.com/watch?v=qZXt1Aom3Cs)

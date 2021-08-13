@@ -39,7 +39,9 @@ pip3 install spacy
 
 ## Screenshots
 
-![English NER](./images/english.jpg)
+|![English NER](./images/english.jpg)|
+|:--:| 
+| *English NER* |
 
 ![No Entities](./images/no_entities.jpg)
 

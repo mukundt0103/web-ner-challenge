@@ -3,7 +3,7 @@ default:
 
 install:
 	cd $(FRONTEND) && npm install
-	cd $(BACKEND) && pip install -r requirements.txt
+	cd $(BACKEND) && pip3 install -r requirements.txt
 
 start:
 	cd $(FRONTEND) && npm run serve &

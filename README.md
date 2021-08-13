@@ -43,11 +43,17 @@ pip3 install spacy
 |:--:| 
 | *English NER* |
 
-![No Entities](./images/no_entities.jpg)
+|![No Entities](./images/no_entities.jpg)|
+|:--:| 
+| *No entities found* |
 
-![Spanish NER](./images/spanish.jpg)
+|![Spanish NER](./images/spanish.jpg)|
+|:--:| 
+| *Spanish NER* |
 
-![German NER](./images/german.jpg)
+|![German NER](./images/german.jpg)|
+|:--:| 
+| *German NER* |
 
 
 ## References

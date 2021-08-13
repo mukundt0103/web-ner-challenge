@@ -1,35 +1,48 @@
 # Web-based named entity recognition
 
-### Background
+This project is done using Vue.js as frontend and Flask as backend. In this project, Named Entity Recognition (NER) is done using spaCy and the user can select upto 4 different languages.
 
-[Named entity recognition](https://en.wikipedia.org/wiki/Named-entity_recognition) (NER) is a very important and long-standing goal of the NLP community. In it, we attempt to identify and categorize "entities" from text so that we can use them for downstream processing such as argument attachment or [event extraction](http://ceur-ws.org/Vol-779/derive2011_submission_1.pdf).
+The spaCy model categorizes into different entitities like:
+1. PERSON
+2. GPE (Geopolitical Entity)
+3. LOC (Location)
+4. ORG (Organization)
+5. MONEY 
+6. DATE
+7. EVENT
+8. WORK_OF_ART 
+9. LANGUAGE
+10. TIME
+11. QUANTITY
+12. PERCENT
+13. CARDINAL (Numerals)
+14. ORDINAL
+15. NORP (Nationalities or religious or political groups)
+16. FAC (Buildings, airports, bridges)
 
-## Task: Build a web application that can take in text and return named entities.
-
+## Steps to run the project
+1. Clone the repository using `git clone `.
+2. Run `make install FRONTEND=vue-frontend BACKEND=flask-backend`.
+3. Run the following to install few requirements.
 ```
-Text: The pilot, John Doe, flew over the United States in his airplane.
-
-Named entities: John Doe (PERSON), the United States (GPE)
+cd web-ner-challenge/vue-frontend
+npm install vue bootstrap bootstrap-vue
+npm install axios --save
+cd ..
+python3 -m spacy download en_core_web_sm
+python3 -m spacy download fr_core_news_sm
+python3 -m spacy download de_core_news_sm
+python3 -m spacy download es_core_news_sm
+pip3 install spacy
 ```
+4. Run `make start FRONTEND=vue-frontend BACKEND=flask-backend`.
 
-### Specifications:
-* Text will be no longer than 500 words.
-* Required named entity types are PERSON, GPE (Geopolitical Entity), LOC (Location), ORG (Organization) - you can add more if you choose
-* If no named entities are found, return a "No entities found" message.
+## Screenshots
 
-### Templates:
-Because we don't aim to test you on project setup, we have provided templates that you may choose to use if you wish. For the frontend, we've given you templates in [`Vue.js`](https://vuejs.org/), [`React.js`](https://reactjs.org/), and [`Angular`](https://angular.io/). For the backend, we have provided a template in [`Flask`](https://flask.palletsprojects.com/en/2.0.x/).
-1. Make sure you have `Node.js` and `npm` installed.
-   * In case you don't have Node.js or npm installed, refer to the NodeSource blog posts [Installing Node.js Tutorial: Using nvm](https://nodesource.com/blog/installing-node-js-tutorial-using-nvm-on-mac-os-x-and-ubuntu/) (macOS and Ubuntu) or [Installing Node.js Tutorial: Windows](https://nodesource.com/blog/installing-nodejs-tutorial-windows/) (Windows) for instructions.
-2. Run `make install FRONTEND=react-frontend BACKEND=flask-backend`
-3. Run `make start FRONTEND=react-frontend BACKEND=flask-backend`
 
-### Judging criteria:
-* **Code quality** - We want to know that you are capable of writing production-level code involving machine learning material.
-* **Usability** - The interface should be intuitive to use for the reviewer.
-* **Accuracy of model** - The model you choose to use should be able to cover the very basics, like recognizing `the United States` as a GPE. We will not be giving it a detailed accuracy score, we just want to know the model works.
-* **Creativity** - This is a catch-all category for whatever else you want to incorporate to show off your skills. Some examples could be implementing more entity types or other linguistic features, creating a more visually appealing interface, creating an option to use a different language, or adding better error handling. This is your time to shine.
 
-![Example app](./assets/web_ner_example.png)
+## References
 
-> If you have any questions/comments while working on this, please reach out to your contact at ISI.
+- [spaCy](https://spacy.io/models/en)
+- [NER with spaCy](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da)
+- [Vue.js Crash Course](https://www.youtube.com/watch?v=qZXt1Aom3Cs)

@@ -41,6 +41,8 @@ pip3 install spacy
 
 ![English NER](./images/english.jpg)
 
+![No Entities](./images/no_entities.jpg)
+
 ![Spanish NER](./images/spanish.jpg)
 
 ![German NER](./images/german.jpg)

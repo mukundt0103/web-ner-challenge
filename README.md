@@ -39,6 +39,9 @@ pip3 install spacy
 
 ## Screenshots
 
+![English NER](./images/english.jpg)
+![Spanish NER](./images/spanish.jpg)
+![German NER](./images/german.jpg)
 
 
 ## References

@@ -21,7 +21,7 @@ The spaCy model categorizes into different entitities like:
 16. FAC (Buildings, airports, bridges)
 
 ## Steps to run the project
-1. Clone the repository using `git clone `.
+1. Clone the repository.
 2. Run `cd web-ner-challenge; make install FRONTEND=vue-frontend BACKEND=flask-backend`.
 3. Run the following to install few requirements.
 ```

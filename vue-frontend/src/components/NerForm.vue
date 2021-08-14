@@ -52,7 +52,7 @@ export default{
         fetchResults(payload){
 
             axios
-            .post("http://localhost:8080/ner-submit", payload)
+            .post("http://localhost:8080/ner", payload)
             .then((res) => {
               this.$emit('show-result', res.data)
             });    

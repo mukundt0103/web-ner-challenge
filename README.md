@@ -22,10 +22,10 @@ The spaCy model categorizes into different entitities like:
 
 ## Steps to run the project
 1. Clone the repository using `git clone `.
-2. Run `make install FRONTEND=vue-frontend BACKEND=flask-backend`.
+2. Run `cd web-ner-challenge; make install FRONTEND=vue-frontend BACKEND=flask-backend`.
 3. Run the following to install few requirements.
 ```
-cd web-ner-challenge/vue-frontend
+cd vue-frontend
 npm install vue bootstrap bootstrap-vue
 npm install axios --save
 cd ..
